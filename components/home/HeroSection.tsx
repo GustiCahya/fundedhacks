@@ -12,7 +12,7 @@ export function HeroSection() {
       </h1>
       
       <p className="max-w-[480px] mx-auto text-[15px] leading-[1.6] text-muted mb-10">
-        Compare discounts, grab exclusive promo codes, and track reviews across the top funded trading firms — all in one place.
+        Compare discounts, grab exclusive promo codes, and track reviews across the top funded trading firms - all in one place.
       </p>
       
       <div className="flex justify-center gap-8">

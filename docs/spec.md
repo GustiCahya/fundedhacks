@@ -1,4 +1,4 @@
-# FundedHacks.com — Product Specification
+# FundedHacks.com - Product Specification
 
 > **Stack:** Next.js (App Router) · Jotai (state management) · TanStack Query (server state / data fetching) · Tailwind CSS
 
@@ -41,8 +41,8 @@
 
 | Token | Value |
 |---|---|
-| Display / wordmark | `Outfit` — weight 700/800 |
-| Body | `DM Sans` — weight 300/400/500 |
+| Display / wordmark | `Outfit` - weight 700/800 |
+| Body | `DM Sans` - weight 300/400/500 |
 | Monospace (codes) | System monospace |
 | Letter spacing (heading) | `-0.5px` to `-1.5px` |
 
@@ -53,7 +53,7 @@ The primary logo is the image file located at `app/logo.png`. It is used in the 
 
 **Wordmark:** `funded` in `#F0EEE8` + `hacks` in `#22C97A`, both `font-weight: 700`, `letter-spacing: -0.5px`, `font-size: 20px` in navbar.
 
-**Tagline in logo:** `PROP FIRM DEALS` — `font-size: 11px`, `letter-spacing: 2.5px`, `color: #555550`.
+**Tagline in logo:** `PROP FIRM DEALS` - `font-size: 11px`, `letter-spacing: 2.5px`, `color: #555550`.
 
 Logo variants required:
 - Dark bg (primary use)
@@ -75,7 +75,7 @@ Logo variants required:
 ```
 
 - Logo: left-aligned
-- `Get Alerts` button: primary green CTA — links to `https://t.me/fundedhacks` (opens in new tab)
+- `Get Alerts` button: primary green CTA - links to `https://t.me/fundedhacks` (opens in new tab)
 - Navbar: `padding: 16px 24px`, `border-bottom: 0.5px solid border`, `background: bg-primary`
 - Sticky top on scroll
 
@@ -86,7 +86,7 @@ Logo variants required:
 ### 2.2 Hero Section
 
 ```
-[Live badge — animated pulse dot]
+[Live badge - animated pulse dot]
 "24 active deals updated today"
 
 [H1]
@@ -95,7 +95,7 @@ prop firm challenges
 
 [Subtext]
 Compare discounts, grab exclusive promo codes, and
-track reviews across the top funded trading firms —
+track reviews across the top funded trading firms -
 all in one place.
 
 [Stats row]
@@ -105,7 +105,7 @@ all in one place.
 **Specs:**
 - Hero padding: `56px 24px 40px`, text centered
 - Badge: `background: green-dim`, `border: 0.5px solid green-dark`, `color: green`, `border-radius: 20px`, `padding: 5px 12px`
-- Animated dot: `width: 6px`, `height: 6px`, `border-radius: 50%`, CSS keyframe `pulse` — opacity 1→0.4→1 at 2s interval
+- Animated dot: `width: 6px`, `height: 6px`, `border-radius: 50%`, CSS keyframe `pulse` - opacity 1→0.4→1 at 2s interval
 - H1: `font-family: Outfit`, `font-weight: 800`, `font-size: clamp(40px, 7vw, 72px)`, `letter-spacing: -1.5px`, `line-height: 1.05`
 - H1 emphasis word ("challenges"): `color: green`
 - Subtext: `color: muted`, `font-size: 15px`, `max-width: 480px`, `margin: 0 auto`, `line-height: 1.6`
@@ -118,7 +118,7 @@ all in one place.
 ### 2.3 Search & Filter Section
 
 ```
-[Search input — full width up to 700px]     [Search button]
+[Search input - full width up to 700px]     [Search button]
 
 [Filter chips]
 All Firms  |  Forex  |  Futures  |  Crypto  |  Instant Funding  |  2-Step Challenge
@@ -147,7 +147,7 @@ export const sortOrderAtom = atom<'discount' | 'newest' | 'rating' | 'expiry'>('
 [Section header]
 "Top Deals Right Now"                [Sort dropdown]
 
-[Card grid — auto-fill, min 280px per card]
+[Card grid - auto-fill, min 280px per card]
 ```
 
 **Sort dropdown options:** Highest Discount · Newest Added · Best Rated · Expiring Soon
@@ -155,11 +155,11 @@ export const sortOrderAtom = atom<'discount' | 'newest' | 'rating' | 'expiry'>('
 #### 2.4.1 Deal Card Anatomy
 
 ```
-[Featured label — if applicable]     ← absolute, top of card
-[Firm logo]  [Firm name]             [Discount badge — e.g. 30%]
+[Featured label - if applicable]     ← absolute, top of card
+[Firm logo]  [Firm name]             [Discount badge - e.g. 30%]
              [Firm type]
 
-[Code row — dashed border]
+[Code row - dashed border]
 CODE123                              [Copy]
 
 [Meta tags]
@@ -197,7 +197,7 @@ tag-red:   background red-dim,   border #5e1010, color red
 
 **Rating:** `color: amber`, stars + `(count reviews)` in muted
 
-**CTA button:** `background: green`, `color: #000`, `border-radius: 8px`, `padding: 7px 14px`, `font-size: 12px`, `font-weight: 500` — links to prop firm via affiliate redirect URL `fundedhacks.com/go/[slug]`
+**CTA button:** `background: green`, `color: #000`, `border-radius: 8px`, `padding: 7px 14px`, `font-size: 12px`, `font-weight: 500` - links to prop firm via affiliate redirect URL `fundedhacks.com/go/[slug]`
 
 **Expires row:** `font-size: 11px`, `color: hint`
 
@@ -333,7 +333,7 @@ Placed **directly below** the email subscribe section.
 ```
 [Telegram Banner]
 Join our Telegram for instant deal alerts
-@fundedhacks — Free forever
+@fundedhacks - Free forever
 
 [Join Channel →]   (links to https://t.me/fundedhacks)
 ```
@@ -342,7 +342,7 @@ Join our Telegram for instant deal alerts
 - Wrapper: `margin: 0 24px 24px`, `background: #0f1a12` (dark green tint), `border: 0.5px solid #1D9E75`, `border-radius: 12px`, `padding: 20px 24px`
 - Layout: flex row, space-between, wraps on mobile, `gap: 16px`
 - Left side:
-  - Telegram icon (SVG) — `width: 32px`, `height: 32px`, `color: #22C97A`
+  - Telegram icon (SVG) - `width: 32px`, `height: 32px`, `color: #22C97A`
   - Heading: `font-family: Syne`, `font-weight: 700`, `font-size: 16px`, `color: #F0EEE8`
   - Subtext: `font-size: 13px`, `color: #888880`
   - Live member badge: animated pulse dot + "X members online" (fetched from Telegram API or static)
@@ -492,7 +492,7 @@ export function GET(req: Request, { params }: { params: { slug: string } }) {
 }
 ```
 
-All affiliate links in the UI point to `/go/[slug]` — never the raw affiliate URL directly.
+All affiliate links in the UI point to `/go/[slug]` - never the raw affiliate URL directly.
 
 ---
 
@@ -616,11 +616,11 @@ export const deals: Deal[] = [
 ```tsx
 // app/page.tsx
 export const metadata = {
-  title: 'FundedHacks — Prop Firm Discount Codes & Deals',
+  title: 'FundedHacks - Prop Firm Discount Codes & Deals',
   description:
     'Compare exclusive discount codes, promo deals and affiliate offers for the top prop trading firms. FTMO, Apex Trader, MyFundedFX, The5ers & 40+ more.',
   openGraph: {
-    title: 'FundedHacks — Prop Firm Discount Codes',
+    title: 'FundedHacks - Prop Firm Discount Codes',
     description: 'Stop overpaying for prop firm challenges. Get exclusive codes & daily deal alerts.',
     url: 'https://fundedhacks.com',
     siteName: 'FundedHacks',
@@ -629,7 +629,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FundedHacks — Prop Firm Discount Codes',
+    title: 'FundedHacks - Prop Firm Discount Codes',
     description: 'Stop overpaying for prop firm challenges.',
     images: ['https://fundedhacks.com/og.png'],
   },
@@ -680,4 +680,4 @@ const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300', '400', '500'] })
 
 ---
 
-*Last updated: March 2026 — FundedHacks v1.0*
+*Last updated: March 2026 - FundedHacks v1.0*

@@ -16,10 +16,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'FundedHacks — Prop Firm Discount Codes & Deals',
+  title: 'FundedHacks - Prop Firm Discount Codes & Deals',
   description: 'Compare exclusive discount codes, promo deals and affiliate offers for the top prop trading firms. FTMO, Apex Trader, MyFundedFX, The5ers & 40+ more.',
   openGraph: {
-    title: 'FundedHacks — Prop Firm Discount Codes',
+    title: 'FundedHacks - Prop Firm Discount Codes',
     description: 'Stop overpaying for prop firm challenges. Get exclusive codes & daily deal alerts.',
     url: 'https://fundedhacks.com',
     siteName: 'FundedHacks',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FundedHacks — Prop Firm Discount Codes',
+    title: 'FundedHacks - Prop Firm Discount Codes',
     description: 'Stop overpaying for prop firm challenges.',
     images: ['https://fundedhacks.com/og.png'],
   },
