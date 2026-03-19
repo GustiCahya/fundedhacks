@@ -25,7 +25,7 @@
 | `green` | `#22C97A` | Primary accent, CTA, discount badges |
 | `green-dark` | `#1a9e60` | Border on green elements |
 | `green-dim` | `#0d2e1a` | Green background fill (low emphasis) |
-| `amber` | `#F5A623` | Affiliate codes, warnings |
+| `amber` | `#F5A623` | Promo codes, warnings |
 | `amber-dim` | `#2e1f00` | Amber background fill |
 | `red` | `#E24B4A` | Tags, danger |
 | `red-dim` | `#2e0f0f` | Red background fill |
@@ -41,21 +41,15 @@
 
 | Token | Value |
 |---|---|
-| Display / wordmark | `Syne` — weight 700/800 |
+| Display / wordmark | `Outfit` — weight 700/800 |
 | Body | `DM Sans` — weight 300/400/500 |
 | Monospace (codes) | System monospace |
 | Letter spacing (heading) | `-0.5px` to `-1.5px` |
 
 ### 1.4 Logo Mark
 
-The logo mark is a **hexagon** (symbol of structure / funded solidity) with two **chevrons** inside:
-- Top chevron: upward-pointing, full opacity — represents growth / "hack upward"
-- Bottom chevron: downward-pointing, `opacity: 0.45` — adds depth
-- Vertical center line: `opacity: 0.3`
-- Hexagon border: `stroke: #22C97A`, `stroke-width: 1.5`
-- Fill: `#0F1A12`
+The primary logo is the image file located at `app/logo.png`. It is used in the Navbar and as the brand's visual identity.
 
-SVG path for hexagon: `M26 2L46 14V38L26 50L6 38V14Z`
 
 **Wordmark:** `funded` in `#F0EEE8` + `hacks` in `#22C97A`, both `font-weight: 700`, `letter-spacing: -0.5px`, `font-size: 20px` in navbar.
 
@@ -100,7 +94,7 @@ Stop overpaying for
 prop firm challenges
 
 [Subtext]
-Compare discounts, grab exclusive affiliate codes, and
+Compare discounts, grab exclusive promo codes, and
 track reviews across the top funded trading firms —
 all in one place.
 
@@ -112,11 +106,11 @@ all in one place.
 - Hero padding: `56px 24px 40px`, text centered
 - Badge: `background: green-dim`, `border: 0.5px solid green-dark`, `color: green`, `border-radius: 20px`, `padding: 5px 12px`
 - Animated dot: `width: 6px`, `height: 6px`, `border-radius: 50%`, CSS keyframe `pulse` — opacity 1→0.4→1 at 2s interval
-- H1: `font-family: Syne`, `font-weight: 800`, `font-size: clamp(32px, 5vw, 52px)`, `letter-spacing: -1.5px`, `line-height: 1.05`
+- H1: `font-family: Outfit`, `font-weight: 800`, `font-size: clamp(40px, 7vw, 72px)`, `letter-spacing: -1.5px`, `line-height: 1.05`
 - H1 emphasis word ("challenges"): `color: green`
 - Subtext: `color: muted`, `font-size: 15px`, `max-width: 480px`, `margin: 0 auto`, `line-height: 1.6`
 - Stats row: `display: flex`, `justify-content: center`, `gap: 32px`
-  - Stat number: `font-family: Syne`, `font-weight: 700`, `font-size: 22px`
+  - Stat number: `font-family: Outfit`, `font-weight: 700`, `font-size: 22px`
   - Stat label: `font-size: 11px`, `color: hint`, `text-transform: uppercase`, `letter-spacing: 0.5px`
 
 ---
@@ -181,12 +175,12 @@ Up to $200K  |  Forex  |  Metals
 - Featured card: `border-color: green-dark` + absolute label `background: green`, `color: #000`, `font-size: 10px`, positioned top inside card
 
 **Firm logo:**
-- `width: 36px`, `height: 36px`, `border-radius: 8px`, initials text `font-family: Syne`, `font-weight: 800`, `font-size: 13px`
+- `width: 36px`, `height: 36px`, `border-radius: 8px`, initials text `font-family: Outfit`, `font-weight: 800`, `font-size: 13px`
 - Each firm has a unique bg color (dark tint of brand color)
 
 **Discount badge:**
 - `background: green-dim`, `border: 0.5px solid green-dark`, `color: green`
-- `font-size: 18px`, `font-weight: 700`, `font-family: Syne`
+- `font-size: 18px`, `font-weight: 700`, `font-family: Outfit`
 
 **Code row:**
 - `background: bg-tertiary`, `border: 0.5px dashed border-2`, `border-radius: 8px`, `padding: 8px 12px`
@@ -678,9 +672,9 @@ DEALS_API_KEY=                     # if using external CMS
 
 Fonts loaded via `next/font/google`:
 ```ts
-import { Syne, DM_Sans } from 'next/font/google'
+import { Outfit, DM_Sans } from 'next/font/google'
 
-const syne = Syne({ subsets: ['latin'], weight: ['700', '800'] })
+const outfit = Outfit({ subsets: ['latin'], weight: ['700', '800'] })
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300', '400', '500'] })
 ```
 
