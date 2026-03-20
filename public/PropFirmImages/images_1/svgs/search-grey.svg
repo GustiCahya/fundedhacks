@@ -1,0 +1,23 @@
+<svg
+                    className="absolute top-1/2 left-4 -translate-y-1/2"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M7.33333 13.3333C10.8994 13.3333 13.3333 10.8994 13.3333 7.33333C13.3333 3.76724 10.8994 0.333252 7.33333 0.333252C3.76724 0.333252 0.333252 3.76724 0.333252 7.33333C0.333252 10.8994 3.76724 13.3333 7.33333 13.3333Z"
+                        stroke="#818181"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    />
+                    <path
+                        d="M14.6667 14L11.9999 11.3333"
+                        stroke="#818181"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    />
+                </svg>
