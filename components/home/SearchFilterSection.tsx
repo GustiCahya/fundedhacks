@@ -12,6 +12,7 @@ const FILTERS = [
   { id: 'crypto', label: 'Crypto' },
   { id: 'instant', label: 'Instant Funding' },
   { id: 'twostep', label: '2-Step Challenge' },
+  { id: 'tools', label: 'Tools' },
 ] as const;
 
 export function SearchFilterSection() {

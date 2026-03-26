@@ -3,8 +3,8 @@ import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/home/HeroSection";
 import { SearchFilterSection } from "@/components/home/SearchFilterSection";
 import { DealsGrid } from "@/components/home/DealsGrid";
-import { QuickCompareTable } from "@/components/home/QuickCompareTable";
-import { EmailSubscribe } from "@/components/home/EmailSubscribe";
+// import { QuickCompareTable } from "@/components/home/QuickCompareTable";
+// import { EmailSubscribe } from "@/components/home/EmailSubscribe";
 import { TelegramBanner } from "@/components/home/TelegramBanner";
 
 export default function HomePage() {
@@ -16,8 +16,8 @@ export default function HomePage() {
         <HeroSection />
         <SearchFilterSection />
         <DealsGrid />
-        <QuickCompareTable />
-        <EmailSubscribe />
+        {/* <QuickCompareTable /> */}
+        {/* <EmailSubscribe /> */}
         <TelegramBanner />
       </main>
 

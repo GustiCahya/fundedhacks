@@ -11,12 +11,15 @@ const variantStyles = {
   amber: "bg-amber-dim border-[#6b3e00] text-amber",
   blue: "bg-blue-dim border-[#184060] text-blue",
   red: "bg-red-dim border-[#5e1010] text-red",
+  purple: 'bg-purple-dim border-[#184060] text-purple',
+  cyan: 'bg-cyan-dim border-[#184060] text-cyan',
 };
 
 export function DealCard({ deal }: { deal: Deal }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
+    if (deal.code === null) return;
     navigator.clipboard.writeText(deal.code);
     setCopied(true);
     setTimeout(() => setCopied(false), 1800);
@@ -46,16 +49,19 @@ export function DealCard({ deal }: { deal: Deal }) {
             <p className="text-[12px] text-muted leading-tight">{deal.type}</p>
           </div>
         </div>
-        <div className="px-2 py-1 font-outfit font-bold text-[18px] leading-none border rounded border-green-dark bg-green-dim text-green">
-          {deal.discountPercent}%
-        </div>
+        {deal.discountPercent !== null && (
+          <div className="px-2 py-1 font-outfit font-bold text-[18px] leading-none border rounded border-green-dark bg-green-dim text-green">
+            {deal.discountPercent}%
+          </div>
+        )}
       </div>
 
-      <div className="flex items-center justify-between p-2 px-3 mb-4 border border-dashed rounded-lg bg-bg-tertiary border-border-2">
-        <span className="font-mono text-[13px] font-medium tracking-[1px] text-amber">
-          {deal.code}
-        </span>
-        <button 
+      {deal.code !== null && (
+        <div className="flex items-center justify-between p-2 px-3 mb-4 border border-dashed rounded-lg bg-bg-tertiary border-border-2">
+          <span className="font-mono text-[13px] font-medium tracking-[1px] text-amber">
+            {deal.code}
+          </span>
+          <button 
           onClick={handleCopy}
           className="flex items-center gap-1.5 text-xs font-medium text-muted hover:text-text-primary transition-colors"
         >
@@ -66,6 +72,7 @@ export function DealCard({ deal }: { deal: Deal }) {
           )}
         </button>
       </div>
+      )}
 
       <div className="flex flex-wrap gap-1.5 mb-5">
         {deal.tags.map((tag, i) => (
@@ -97,6 +104,8 @@ export function DealCard({ deal }: { deal: Deal }) {
         
         <Link 
           href={`/go/${deal.slug}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-3.5 py-1.5 text-[13px] font-medium text-black transition-colors rounded-lg bg-green hover:bg-green-dark"
         >
           Get Deal &rarr;

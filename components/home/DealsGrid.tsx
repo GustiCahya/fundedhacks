@@ -24,7 +24,7 @@ export function DealsGrid() {
             <option value="discount">Highest Discount</option>
             <option value="newest">Newest Added</option>
             <option value="rating">Best Rated</option>
-            <option value="expiry">Expiring Soon</option>
+            {/* <option value="expiry">Expiring Soon</option> */}
           </select>
           <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted pointer-events-none" />
         </div>
