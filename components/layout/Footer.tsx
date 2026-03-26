@@ -9,14 +9,14 @@ export function Footer() {
       </div>
       <div className="flex items-center gap-4 text-xs text-hint">
         <span>© 2026 FundedHacks</span>
-        <span>&middot;</span>
+        {/* <span>&middot;</span>
         <Link href="#" className="hover:text-muted">
           Affiliate Disclosure
         </Link>
         <span>&middot;</span>
         <Link href="#" className="hover:text-muted">
           Privacy
-        </Link>
+        </Link> */}
       </div>
     </footer>
   );
