@@ -28,7 +28,7 @@ export const deals: Deal[] = [
       { label: '2-Step Challenge', variant: 'purple' },
     ],
     maxAccount: 'Up to $200K (scale to $2M)', rating: 4.7, reviewCount: 16900,
-    featured: false, expiresAt: null,
+    featured: true, expiresAt: null,
     affiliateUrl: 'https://app.alphacapitalgroup.uk/signup/APFVX',
     createdAt: '2025-01-04',
   },
