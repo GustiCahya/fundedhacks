@@ -260,7 +260,7 @@ export const deals: Deal[] = [
 
   {
     id: '13', firm: 'Blue Guardian', slug: 'blue-guardian',
-    logo: '/PropFirmImages/images_3/Blue_Guardian.png',
+    logo: '/PropFirmImages/images_1/blue_guardian.jpg',
     logoInitials: 'BG', logoColors: { bg: '#042c53', text: '#378ADD' },
     type: '1/2/3-Step & Instant · Forex & Crypto', category: 'instant',
     discountPercent: 30, code: "1wwm",
