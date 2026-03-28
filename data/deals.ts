@@ -3,6 +3,7 @@ import { Deal } from '@/types/deal';
 export const deals: Deal[] = [
   {
     id: '3', firm: 'FXReplay', slug: 'fxreplay',
+    logo: '/PropFirmImages/images_1/fxreplay.jpg',
     logoInitials: 'FR', logoColors: { bg: '#0c1e38', text: '#378ADD' },
     type: 'Backtesting Platform · Forex & Crypto', category: 'tools',
     discountPercent: 15, code: '15percent',
@@ -19,6 +20,7 @@ export const deals: Deal[] = [
 
   {
     id: '4', firm: 'Alpha Capital Group', slug: 'alpha-capital-group',
+    logo: '/PropFirmImages/images_3/Alpha_Logo.jpg_small',
     logoInitials: 'AC', logoColors: { bg: '#1a2e1a', text: '#22C97A' },
     type: '1/2/3-Step · Forex & Indices', category: 'twostep',
     discountPercent: 15, code: 'APFVX',
@@ -35,6 +37,7 @@ export const deals: Deal[] = [
 
   {
     id: '6', firm: 'FXIFY', slug: 'fxify',
+    logo: '/PropFirmImages/images_3/FXIFY.webp',
     logoInitials: 'FX', logoColors: { bg: '#0c1e38', text: '#85B7EB' },
     type: '1/2/3-Step · Forex & Crypto', category: 'twostep',
     discountPercent: 15, code: 'FXIFYX1G0Z2',
@@ -52,6 +55,7 @@ export const deals: Deal[] = [
 
   {
     id: '7', firm: 'WeMasterTrade', slug: 'wemastertrade',
+    logo: '/PropFirmImages/images_1/wemastertrade.png',
     logoInitials: 'WM', logoColors: { bg: '#1e0d0d', text: '#E24B4A' },
     type: '1/2-Step · Forex & Indices', category: 'twostep',
     discountPercent: 20, code: 'FUNDEDHACKS',
@@ -68,6 +72,7 @@ export const deals: Deal[] = [
 
   {
     id: '10', firm: 'Bright Funded', slug: 'bright-funded',
+    logo: '/PropFirmImages/images_1/BrightFunded.jpg',
     logoInitials: 'BF', logoColors: { bg: '#2e1f00', text: '#EF9F27' },
     type: '2-Step Challenge · Forex', category: 'twostep',
     discountPercent: 15, code: 'TLsHPMd5QUW4d6MBu0B8lA',
@@ -84,6 +89,7 @@ export const deals: Deal[] = [
 
   {
     id: '15', firm: 'Fintokei', slug: 'fintokei',
+    logo: '/PropFirmImages/images_1/fintokei.jpg',
     logoInitials: 'FT', logoColors: { bg: '#2e1f00', text: '#FAC775' },
     type: '2-Step Challenge · Forex & Indices', category: 'twostep',
     discountPercent: 5, code: 'FINTOKEI5OFF',
@@ -100,6 +106,7 @@ export const deals: Deal[] = [
 
   {
     id: '16', firm: 'Funding Pips', slug: 'funding-pips',
+    logo: '/PropFirmImages/images_1/FundingPips.jpg',
     logoInitials: 'FP', logoColors: { bg: '#0c1e38', text: '#378ADD' },
     type: '2-Step Challenge · Forex & Crypto', category: 'twostep',
     discountPercent: 5, code: 'E8EA4151',
@@ -117,6 +124,7 @@ export const deals: Deal[] = [
 
   {
     id: '18', firm: 'Think Capital', slug: 'think-capital',
+    logo: '/PropFirmImages/images_1/PP-ThinkCapital.jpg',
     logoInitials: 'TC', logoColors: { bg: '#1a0d0d', text: '#E24B4A' },
     type: '2/3-Step · Forex & Crypto', category: 'twostep',
     discountPercent: 10, code: 'FUNDEDHACKS',
@@ -134,6 +142,7 @@ export const deals: Deal[] = [
 
   {
     id: '1', firm: 'FundedNext', slug: 'fundednext',
+    logo: '/PropFirmImages/images_3/fundednext.png',
     logoInitials: 'FN', logoColors: { bg: '#0a1f2e', text: '#1D9E75' },
     type: '2-Step Challenge · Forex & Crypto', category: 'twostep',
     discountPercent: 7, code: null,
@@ -151,6 +160,7 @@ export const deals: Deal[] = [
 
   {
     id: '2', firm: 'The5ers', slug: 'the5ers',
+    logo: '/PropFirmImages/images_3/The5ers.png',
     logoInitials: 'T5', logoColors: { bg: '#2e1f00', text: '#F5A623' },
     type: '1/2/3-Step · Forex', category: 'twostep',
     discountPercent: 5, code: null,
@@ -166,6 +176,7 @@ export const deals: Deal[] = [
 
   {
     id: '5', firm: 'Alpha Futures', slug: 'alpha-futures',
+    logo: '/PropFirmImages/images_2/alpha-futures-logo.avif',
     logoInitials: 'AF', logoColors: { bg: '#1a0d2e', text: '#9B6DFF' },
     type: '1-Step Evaluation · Futures (CME)', category: 'futures',
     discountPercent: 15, code: null,
@@ -181,6 +192,7 @@ export const deals: Deal[] = [
 
   {
     id: '8', firm: 'Blueberry Funded', slug: 'blueberry-funded',
+    logo: '/PropFirmImages/images_3/BlueberryFunded.png',
     logoInitials: 'BB', logoColors: { bg: '#1a0d2e', text: '#AFA9EC' },
     type: '2-Step Challenge · Multi-Asset', category: 'twostep',
     discountPercent: 5, code: null,
@@ -197,6 +209,7 @@ export const deals: Deal[] = [
 
   {
     id: '9', firm: 'FunderPro', slug: 'funderpro',
+    logo: '/PropFirmImages/images_1/PP-FunderPro.jpg',
     logoInitials: 'FP', logoColors: { bg: '#042c53', text: '#85B7EB' },
     type: '1/2-Step · Forex & Indices', category: 'twostep',
     discountPercent: null, code: null,
@@ -212,6 +225,7 @@ export const deals: Deal[] = [
 
   {
     id: '11', firm: 'Aqua Funded', slug: 'aqua-funded',
+    logo: '/PropFirmImages/images_3/aqua_logo.PNG',
     logoInitials: 'AQ', logoColors: { bg: '#042c53', text: '#5DCAA5' },
     type: '1/2-Step & Instant · Multi-Asset', category: 'instant',
     discountPercent: 20, code: null,
@@ -229,6 +243,7 @@ export const deals: Deal[] = [
 
   {
     id: '12', firm: 'Aqua Futures', slug: 'aqua-futures',
+    logo: '/PropFirmImages/images_3/AquaFutures.png',
     logoInitials: 'AQF', logoColors: { bg: '#04342C', text: '#5DCAA5' },
     type: 'Instant Funding · Futures (CME)', category: 'futures',
     discountPercent: null, code: null,
@@ -245,6 +260,7 @@ export const deals: Deal[] = [
 
   {
     id: '13', firm: 'Blue Guardian', slug: 'blue-guardian',
+    logo: '/PropFirmImages/images_3/Blue_Guardian.png',
     logoInitials: 'BG', logoColors: { bg: '#042c53', text: '#378ADD' },
     type: '1/2/3-Step & Instant · Forex & Crypto', category: 'instant',
     discountPercent: 30, code: "1wwm",
@@ -263,6 +279,7 @@ export const deals: Deal[] = [
 
   {
     id: '14', firm: 'City Traders Imperium', slug: 'city-traders-imperium',
+    logo: '/PropFirmImages/images_1/CTI-Profile-Picture.jpg',
     logoInitials: 'CT', logoColors: { bg: '#1a2e1a', text: '#97C459' },
     type: '1/2-Step & Instant · Forex', category: 'twostep',
     discountPercent: null, code: null,
@@ -279,6 +296,7 @@ export const deals: Deal[] = [
 
   {
     id: '17', firm: 'Maven Trading', slug: 'maven-trading',
+    logo: '/PropFirmImages/images_1/Maven_Logo.jpg',
     logoInitials: 'MV', logoColors: { bg: '#1e0d2e', text: '#AFA9EC' },
     type: '2-Step Challenge · Forex & Metals', category: 'twostep',
     discountPercent: 4, code: null,

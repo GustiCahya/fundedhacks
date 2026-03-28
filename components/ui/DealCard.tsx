@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Deal } from "@/types/deal";
 import { Copy, Check, Star } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const variantStyles = {
@@ -38,12 +39,24 @@ export function DealCard({ deal }: { deal: Deal }) {
 
       <div className="flex items-start justify-between mb-5">
         <div className="flex items-center gap-3">
-          <div 
-            className="flex items-center justify-center w-[38px] h-[38px] font-outfit font-[800] text-[13px] rounded-lg"
-            style={{ backgroundColor: deal.logoColors.bg, color: deal.logoColors.text }}
-          >
-            {deal.logoInitials}
-          </div>
+          {deal.logo ? (
+            <div className="relative w-[38px] h-[38px] overflow-hidden rounded-lg shrink-0 bg-white dark:bg-bg-tertiary flex items-center justify-center border border-border">
+              <Image 
+                src={deal.logo} 
+                alt={`${deal.firm} logo`} 
+                fill
+                className="object-contain"
+                sizes="38px"
+              />
+            </div>
+          ) : (
+            <div 
+              className="flex items-center justify-center w-[38px] h-[38px] font-outfit font-[800] text-[13px] rounded-lg shrink-0"
+              style={{ backgroundColor: deal.logoColors.bg, color: deal.logoColors.text }}
+            >
+              {deal.logoInitials}
+            </div>
+          )}
           <div>
             <h3 className="font-bold text-text-primary text-[15px] leading-tight mb-0.5">{deal.firm}</h3>
             <p className="text-[12px] text-muted leading-tight">{deal.type}</p>

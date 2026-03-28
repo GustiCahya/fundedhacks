@@ -2,6 +2,7 @@ export interface Deal {
   id: string;
   firm: string;
   slug: string;
+  logo: string;
   logoInitials: string;
   logoColors: {
     bg: string;
