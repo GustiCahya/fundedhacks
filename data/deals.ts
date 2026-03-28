@@ -20,7 +20,7 @@ export const deals: Deal[] = [
 
   {
     id: '4', firm: 'Alpha Capital Group', slug: 'alpha-capital-group',
-    logo: '/PropFirmImages/images_3/Alpha_Logo.jpg_small',
+    logo: '/PropFirmImages/images_1/alpha_capital_group.png',
     logoInitials: 'AC', logoColors: { bg: '#1a2e1a', text: '#22C97A' },
     type: '1/2/3-Step · Forex & Indices', category: 'twostep',
     discountPercent: 15, code: 'APFVX',
