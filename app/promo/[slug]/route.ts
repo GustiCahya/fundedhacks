@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { deals } from "@/data/deals";
+import { track } from "@vercel/analytics/server";
 
 export async function GET(
   request: Request,
@@ -12,7 +13,17 @@ export async function GET(
     return new Response('Not found', { status: 404 });
   }
 
-  // Record click event here in a real app (analytics / db event)
+  // Record click event
+  try {
+    await track('Click Promo Link', { 
+      propFirm: deal.firm,
+      slug: deal.slug
+    }, { 
+      headers: request.headers 
+    });
+  } catch (err) {
+    console.error("Vercel Analytics track error:", err);
+  }
 
   return redirect(deal.affiliateUrl);
 }
