@@ -293,7 +293,6 @@ export const deals: Deal[] = [
     affiliateUrl: 'https://app.citytradersimperium.com/user-auth/register?referral_code=4c24a6&utm_source=client&utm_medium=referral&utm_id=4c24a6',
     createdAt: '2025-01-14',
   },
-
   {
     id: '17', firm: 'Maven Trading', slug: 'maven-trading',
     logo: '/PropFirmImages/images_1/Maven_Logo.jpg',
@@ -309,5 +308,21 @@ export const deals: Deal[] = [
     featured: false, expiresAt: null,
     affiliateUrl: 'https://maventrading.com/?ref=otjhzjg',
     createdAt: '2025-01-17',
+  },
+  {
+    id: '18', firm: 'V Prop Trader', slug: 'v-prop-trader',
+    logo: '/PropFirmImages/images_1/v_prop_trader.png',
+    logoInitials: 'VPT', logoColors: { bg: '#1e0d2e', text: '#AFA9EC' },
+    type: '2-Step Challenge · Forex & Metals', category: 'twostep',
+    discountPercent: null, code: null,
+    tags: [
+      { label: 'Up to $50K', variant: 'green' },
+      { label: 'Forex', variant: 'blue' },
+      { label: '2-Step Challenge', variant: 'purple' },
+    ],
+    maxAccount: 'Up to $50', rating: 4.7, reviewCount: 7000,
+    featured: false, expiresAt: null,
+    affiliateUrl: 'https://vproptrader.com/home/main?inviteCode=6mwfre79',
+    createdAt: '2025-06-18',
   },
 ];

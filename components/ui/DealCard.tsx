@@ -116,7 +116,7 @@ export function DealCard({ deal }: { deal: Deal }) {
         </div>
         
         <Link 
-          href={`/go/${deal.slug}`}
+          href={`/promo/${deal.slug}`}
           target="_blank"
           rel="noopener noreferrer"
           className="px-3.5 py-1.5 text-[13px] font-medium text-black transition-colors rounded-lg bg-green hover:bg-green-dark"
